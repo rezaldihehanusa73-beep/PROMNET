@@ -2,43 +2,81 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Judul Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website - Home</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Personal Website</h1>
-    <p>Selamat datang di website pribadi saya</p>
-    <nav>
-      <a href="index.html">Home</a> | <a href="About.html">About</a> |
-      <a href="projek.html">Project</a> | <a href="Contact.html">Contact</a> |
-      <a href="skills.html">Skills</a> 
-    </nav>
+    <header id="main-header">
+      <div class="container-navbar">
+        <div class="judul-navbar">
+          <h1>Personal Website</h1>
+          <p>Selamat datang di website pribadi saya</p>
+        </div>
+
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <span class="nav-separator">|</span>
+          <a href="About.html">About</a>
+          <span class="nav-separator">|</span>
+          <a href="projek.html">Project</a>
+          <span class="nav-separator">|</span>
+          <a href="Contact.html">Contact</a>
+          <span class="nav-separator">|</span>
+          <a href="skills.html">Skills</a>
+        </nav>
+      </div>
+    </header>
+
     <hr />
-    <h2 id="Judul">Halo, Saya Rio Putra Hermawan</h2>
-    <img
-      src="../PROMNET/ganteng.jpeg"
-      alt="Foto profil mahasiswa"
-      width="200"
-    />
-    <p>
-      Saya adalah mahasiswa yang sedang belajar pengembangan web <br />Website
-      ini dibuat sebagai latihan menggunakan HTML dasar tanpa CSS
-    </p>
-    <p>
-      Di website ini anda dapat mengenal saya, melihat beberapa project, serta
-      menghubungi saya melalui contact
-    </p>
-    <h3>Yang sedang saya pelajari</h3>
-    <ul>
-      <li>HTML</li>
-      <li>Algoritma Pemrograman</li>
-      <li>Basis Data</li>
-      <li>Git dan Github</li>
-    </ul>
-    <p>
-      Silahkan kunjungi halaman <a href="about.html">about</a> untuk mengetahui
-      profil saya lebih lengkap
-    </p>
-    <hr />
-    <p>© 2026 Rio Putra Hermawan. Dibuat menggunakan HTML.</p>
+
+    <main>
+      <section id="header">
+        <div class="introduction">
+          <div class="text-introduction">
+            <h2>Halo, Saya Rio Putra Hermawan</h2>
+
+            <p>
+              Saya adalah mahasiswa yang sedang belajar pengembangan web.
+              Website ini dibuat sebagai latihan menggunakan HTML dasar tanpa
+              CSS.
+            </p>
+
+            <p>
+              Di website ini Anda dapat mengenal saya, melihat beberapa project,
+              serta menghubungi saya melalui contact.
+            </p>
+          </div>
+
+          <div class="foto-introduction">
+            <img src="../PROMNET/ganteng.jpeg" alt="Foto profil mahasiswa" />
+          </div>
+        </div>
+      </section>
+
+      <section class="learning">
+        <h3>Yang Sedang Saya Pelajari</h3>
+
+        <ul>
+          <li>HTML</li>
+          <li>Algoritma Pemrograman</li>
+          <li>Basis Data</li>
+          <li>Git dan GitHub</li>
+        </ul>
+
+        <p>
+          Silakan kunjungi halaman
+          <a href="About.html">About</a>
+          untuk mengetahui profil saya lebih lengkap.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <hr />
+
+      <p>©2026 Rio Putra Hermawan. Dibuat menggunakan HTML.</p>
+    </footer>
   </body>
 </html>
