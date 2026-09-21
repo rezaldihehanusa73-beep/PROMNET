@@ -1,11 +1,11 @@
 body {
-  background-color: #f1f5f9;
+  background-color: #0f172a;
   line-height: 1.6;
   margin: 0;
 }
 
 #main-header {
-  background-color: #ffffff;
+  background-color: #020617;
   padding: 20px 10px;
   border-bottom: 2px solid #cbd5e1;
 }
@@ -24,7 +24,7 @@ body {
 
 .judul-navbar h1 {
   font-family: "Poppins", sans-serif;
-  color: #0f172a;
+  color: #fafafa;
   margin: 15px 0 10px;
   font-size: 32px;
   font-weight: 700;
@@ -32,7 +32,7 @@ body {
 
 .judul-navbar p {
   font-family: "Inter", sans-serif;
-  color: #475569;
+  color: #fafafa;
   margin: 0 0 10px;
   font-size: 15px;
 }
@@ -42,7 +42,7 @@ body {
   align-items: center;
   gap: 15px;
   padding: 10px 15px;
-  background-color: #0f172a;
+  background-color: #172b5b;
   border-radius: 20px;
 }
 
@@ -65,7 +65,7 @@ body {
 
 hr {
   border: none;
-  border-top: 2px solid #cbd5e1;
+  border-top: 2px solid #334155;
   margin: 0;
 }
 
@@ -110,7 +110,7 @@ hr {
   width: 180px;
   height: 180px;
   padding: 8px;
-  border: 3px solid #0f172a;
+  border: 3px solid #172b5b;
   margin: 15px auto;
   border-radius: 50%;
   object-fit: cover;
@@ -149,7 +149,7 @@ hr {
 
 .learning p a,
 .data-diri td a {
-  color: #0f172a;
+  color: #172b5b;
   text-decoration: none;
   font-weight: 600;
 }
@@ -157,7 +157,7 @@ hr {
 .learning p a:hover,
 .data-diri td a:hover {
   color: #06b6d4;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .learning ul {
@@ -173,11 +173,11 @@ hr {
 .hobi li,
 .daftar-projek li {
   font-family: "Inter", sans-serif;
-  background-color: #0f172a;
+  background-color: #172b5b;
   color: #ffffff;
   padding: 10px 18px;
   border-radius: 20px;
-  border: 1px solid #1d4ed8;
+  border: 1px solid #2563eb;
   font-weight: 600;
   font-size: 14px;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -218,13 +218,13 @@ hr {
 }
 
 .data-diri th {
-  background-color: #0f172a;
+  background-color: #172b5b;
   color: #ffffff;
   text-align: left;
 }
 
 .data-diri tr:hover td {
-  background-color: #f1f5f9;
+  background-color: #f8fafc;
 }
 
 .hobi,
@@ -257,7 +257,7 @@ hr {
 
 .riwayat-pendidikan li::marker,
 .skills li::marker {
-  color: #1d4ed8;
+  color: #2563eb;
 }
 
 .daftar-projek h2,
@@ -304,7 +304,7 @@ hr {
 }
 
 .table-projek th {
-  background-color: #0f172a;
+  background-color: #172b5b;
   color: #ffffff;
   font-weight: 600;
 }
@@ -339,7 +339,7 @@ hr {
 }
 
 .container-contact th {
-  background-color: #0f172a;
+  background-color: #172b5b;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
@@ -353,7 +353,7 @@ hr {
 
 .container-contact .label {
   width: 30%;
-  background-color: #f1f5f9;
+  background-color: #f8fafc;
   color: #0f172a;
   text-align: center;
 }
@@ -377,12 +377,12 @@ hr {
 .container-contact input:focus,
 .container-contact textarea:focus {
   outline: none;
-  border-color: #06b6d4;
+  border-color: #2563eb;
 }
 
 .container-contact input[type="radio"],
 .container-contact input[type="checkbox"] {
-  accent-color: #06b6d4;
+  accent-color: #2563eb;
 }
 
 .container-contact input[type="submit"],
@@ -396,7 +396,7 @@ hr {
 }
 
 .container-contact input[type="submit"] {
-  background-color: #0f172a;
+  background-color: #172b5b;
   color: #ffffff;
 }
 
@@ -423,15 +423,24 @@ hr {
   text-align: center;
   padding: 15px;
   font-size: 14px;
-  color: #64748b;
+  color: #cbd5e1;
   margin-top: 20px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #06b6d4;
+  text-decoration: none;
 }
 
 .footer p {
   margin: 5px 0;
 }
-
-/* ANIMATION */
 
 @keyframes fadeIn {
   from {
