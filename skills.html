@@ -2,15 +2,51 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Judul Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website - Skills</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a> | <a href="About.html">About</a> |
-      <a href="projek.html">Project</a> | <a href="Contact.html">Contact</a> |
-      <a href="skills.html">Skills</a>
-    </nav>
+    <header id="main-header">
+      <div class="container-navbar">
+        <div class="judul-navbar">
+          <h1>Skills</h1>
+          <p>Berikut ini adalah daftar skill yang saya miliki</p>
+        </div>
+
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <span class="nav-separator">|</span>
+          <a href="About.html">About</a>
+          <span class="nav-separator">|</span>
+          <a href="projek.html">Project</a>
+          <span class="nav-separator">|</span>
+          <a href="Contact.html">Contact</a>
+          <span class="nav-separator">|</span>
+          <a href="skills.html" class="active" >Skills</a>
+        </nav>
+      </div>
+    </header>
     <hr />
+
+    <main>
+      <section class="skill">
+        <div class="skills">
+          <h2>Skill yang saya miliki</h2>
+          <ul>
+            <li>Desain Grafis</li>
+            <li>Fotografi</li>
+            <li>Videografi</li>
+            <li>Social Media Management</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <hr />
+      <p>©2026 Rio Putra Hermawan. Dibuat menggunakan HTML.</p>
+    </footer>
   </body>
 </html>

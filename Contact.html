@@ -2,22 +2,37 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Judul Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website - Contact</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Contact US</h1>
-    <nav>
-      <a href="index.html">Home</a> | <a href="About.html">About</a> |
-      <a href="projek.html">Project</a> | <a href="Contact.html">Contact</a> |
-      <a href="skills.html">Skills</a> 
-    </nav>
+    <header id="main-header">
+      <div class="container-navbar">
+        <div class="judul-navbar">
+          <h1>Contact</h1>
+          <p>Jika anda ingin berdiskusi atau bekerja sama, silahkan hubungi saya
+          melalui form berikut.</p>
+        </div>
+
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <span class="nav-separator">|</span>
+          <a href="About.html">About</a>
+          <span class="nav-separator">|</span>
+          <a href="projek.html">Project</a>
+          <span class="nav-separator">|</span>
+          <a href="Contact.html" class="active">Contact</a>
+          <span class="nav-separator">|</span>
+          <a href="skills.html">Skills</a>
+        </nav>
+      </div>
+    </header>
     <hr />
-    <h2>Informasi Kontak</h2>
-    <p>
-      Jika anda ingin berdiskusi atau bekerja sama, silahkan hubungi saya
-      melalui form berikut. <br />
-      Anda juuga dapat mengirim email ke riooputra28@student.upi.edu
-    </p>
+
+    <section class="contact">
+      <div class="container-contact">
     <h2>Form Pesan</h2>
     <table border="1" cellspacing="0" cellpadding="10">
       <tr>
@@ -38,8 +53,8 @@
       <tr>
         <td class="label" align="right"><strong>Jenis Kelamin</strong></td>
         <td class="input">
-          <input type="radio" name="laki-laki" value="Laki-Laki" /> Laki-Laki
-          <input type="radio" name="perempuan" value="Perempuan" />
+          <input type="radio" name="jenis_kelamin" value="Laki-Laki" /> Laki-Laki
+          <input type="radio" name="jenis_kelamin" value="Perempuan" />
           Perempuan
         </td>
       </tr>
@@ -50,9 +65,9 @@
       <tr>
         <td class="label" align="right"><strong>Jenis Pesan</strong></td>
         <td class="input">
-          <input type="radio" name="pertanyaan" value="Pertanyaan" /> Pertanyaan
-          <input type="radio" name="saran" value="Saran" /> Saran
-          <input type="radio" name="lainnya" value="Lainnya" /> Lainnya
+          <input type="radio" name="jenis_pesan" value="Pertanyaan" /> Pertanyaan
+          <input type="radio" name="jenis_pesan" value="Saran" /> Saran
+          <input type="radio" name="jenis_pesan" value="Lainnya" /> Lainnya
         </td>
       </tr>
       <tr>
@@ -77,12 +92,15 @@
     </table>
     <p>
       <em>
-        Catatan; Karena website ini hanya menggunakan HTML, form bbelum
-        terhubung ke server/database</em
-      >
+        Catatan; Karena website ini hanya menggunakan HTML, form belum
+        terhubung ke server/database</em>
     </p>
+    </div>
+    </section>
+    <footer class="footer">
     <hr />
     <p><a href="Home.html">Kembali ke Home</a></p>
     <p>© 2026 Rio Putra Hermawan</p>
+    </footer>
   </body>
 </html>

@@ -15,7 +15,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #ffffff;
 }
 
 .judul-navbar {
@@ -53,10 +52,10 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  transition: color 0.3s ease;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.active {
   color: #06b6d4;
 }
 
@@ -79,16 +78,15 @@ hr {
   margin: 20px auto;
   padding: 25px;
   background-color: #ffffff;
-  border-radius: 12px;
   border: 1px solid #cbd5e1;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 30px;
 }
 
 .text-introduction {
-  width: 60%;
+  flex: 1;
 }
 
 .text-introduction h2 {
@@ -96,7 +94,6 @@ hr {
   color: #0f172a;
   margin: 15px 0 10px;
   font-size: 24px;
-  font-weight: 600;
 }
 
 .text-introduction p {
@@ -107,7 +104,6 @@ hr {
 
 .foto-introduction {
   width: 30%;
-  text-align: center;
 }
 
 .foto-introduction img {
@@ -122,13 +118,17 @@ hr {
   animation: fadeIn 1.2s ease-out;
 }
 
-.learning {
+.learning,
+.biodata,
+.daftar-projek,
+.table-projek,
+.skill {
   max-width: 800px;
   margin: 20px auto;
   padding: 25px;
   background-color: #ffffff;
-  border-radius: 12px;
   border: 1px solid #cbd5e1;
+  border-radius: 12px;
 }
 
 .learning h3 {
@@ -137,7 +137,6 @@ hr {
   text-align: center;
   margin: 15px 0 10px;
   font-size: 22px;
-  font-weight: 600;
 }
 
 .learning p {
@@ -148,14 +147,15 @@ hr {
   font-size: 15px;
 }
 
-.learning p a {
+.learning p a,
+.data-diri td a {
   color: #0f172a;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
-.learning p a:hover {
+.learning p a:hover,
+.data-diri td a:hover {
   color: #06b6d4;
   text-decoration: underline;
 }
@@ -165,11 +165,13 @@ hr {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
-.learning li {
+.learning li,
+.hobi li,
+.daftar-projek li {
   font-family: "Inter", sans-serif;
   background-color: #0f172a;
   color: #ffffff;
@@ -181,9 +183,239 @@ hr {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.learning li:hover {
+.learning li:hover,
+.hobi li:hover,
+.daftar-projek li:hover {
   background-color: #06b6d4;
   transform: translateY(-3px);
+}
+
+.biodata {
+  margin: 5px auto;
+}
+
+.biodata h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  font-size: 22px;
+  margin: 5px;
+}
+
+.data-diri table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  font-size: 15px;
+}
+
+.data-diri th,
+.data-diri td,
+.table-projek th,
+.table-projek td {
+  border: 1px solid #cbd5e1;
+  padding: 10px 15px;
+}
+
+.data-diri th {
+  background-color: #0f172a;
+  color: #ffffff;
+  text-align: left;
+}
+
+.data-diri tr:hover td {
+  background-color: #f1f5f9;
+}
+
+.hobi,
+.riwayat-pendidikan {
+  margin-top: 35px;
+}
+
+.hobi ol {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.riwayat-pendidikan ul,
+.skills ul {
+  margin: 0;
+  padding-left: 25px;
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  font-size: 15px;
+}
+
+.riwayat-pendidikan li,
+.skills li {
+  margin-bottom: 10px;
+}
+
+.riwayat-pendidikan li::marker,
+.skills li::marker {
+  color: #1d4ed8;
+}
+
+.daftar-projek h2,
+.daftar-projek h3,
+.table-projek h3,
+.skills h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 5px 0 5px;
+}
+
+.daftar-projek p {
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  font-size: 15px;
+  margin: 0 0 15px;
+}
+
+.daftar-projek ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.daftar-projek img {
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid #cbd5e1;
+  margin: 10px 0 15px;
+}
+
+.table-projek {
+  width: 800px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  font-size: 15px;
+}
+
+.table-projek th {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+}
+
+.container-contact {
+  background-color: #ffffff;
+  padding: 25px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+
+.container-contact h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+}
+
+.container-contact table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  font-size: 15px;
+}
+
+.container-contact th {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container-contact th,
+.container-contact td {
+  border: 1px solid #cbd5e1;
+  padding: 10px 15px;
+}
+
+.container-contact .label {
+  width: 30%;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  text-align: center;
+}
+
+.container-contact input[type="text"],
+.container-contact input[type="date"],
+.container-contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.container-contact textarea {
+  resize: vertical;
+}
+
+.container-contact input:focus,
+.container-contact textarea:focus {
+  outline: none;
+  border-color: #06b6d4;
+}
+
+.container-contact input[type="radio"],
+.container-contact input[type="checkbox"] {
+  accent-color: #06b6d4;
+}
+
+.container-contact input[type="submit"],
+.container-contact input[type="reset"] {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container-contact input[type="submit"] {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.container-contact input[type="reset"] {
+  background-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.container-contact input[type="submit"]:hover,
+.container-contact input[type="reset"]:hover {
+  background-color: #06b6d4;
+  color: #ffffff;
+}
+
+.container-contact > p {
+  font-family: "Inter", sans-serif;
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 15px;
 }
 
 .footer {
@@ -195,11 +427,18 @@ hr {
   margin-top: 20px;
 }
 
+.footer p {
+  margin: 5px 0;
+}
+
+/* ANIMATION */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
